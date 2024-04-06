@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+body {
+  font-family: var(--font-sans), sans-serif;
+}
+
+nav {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}

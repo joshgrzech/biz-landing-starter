@@ -1,0 +1,23 @@
+[
+  { "primary": "Alegreya", "secondary": "Alegreya"},
+  { "primary": "Nunito Sans", "secondary": "Nunito Sans" },
+  { "primary": "Karla", "secondary": "Inconsolata" },
+  { "primary": "Quicksand", "secondary": "Quicksand" },
+  { "primary": "Syne", "secondary": "Inter" },
+  { "primary": "Cormorant", "secondary": "Open Sans" },
+  { "primary": "Oswald", "secondary": "Lora" },
+  { "primary": "Montserrat", "secondary": "Open Sans" },
+  { "primary": "Montserrat", "secondary": "Montserrat" },
+  { "primary": "Josefin Slab", "secondary": "Josefin Sans" },
+  { "primary": "Josefin Sans", "secondary": "Open Sans" },
+  { "primary": "Josefin Sans", "secondary": "Inter" },
+  { "primary": "Cabin", "secondary": "Cabin" },
+  { "primary": "Nunito", "secondary": "Nunito Sans" },
+  { "primary": "Lora", "secondary": "DM Sans" },
+  { "primary": "Bitter", "secondary": "Raleway" },
+  { "primary": "EB Garamond", "secondary": "Montserrat" },
+  { "primary": "Inter", "secondary": "Inter" },
+  { "primary": "Noto Serif", "secondary": "Noto Sans" },
+  { "primary": "Playfair Display", "secondary": "DM Sans" },
+  { "primary": "Epilogue", "secondary": "Epilogue" }
+]
