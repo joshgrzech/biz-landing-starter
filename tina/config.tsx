@@ -1,5 +1,9 @@
-import { TinaUserCollection } from "tinacms-authjs/dist/tinacms";
-import { defineConfig } from "tinacms";
+import {
+  UsernamePasswordAuthJSProvider,
+  TinaUserCollection,
+} from "tinacms-authjs/dist/tinacms";
+import { defineConfig, LocalAuthProvider } from "tinacms";
+
 import { PageCollection } from "./collections/page";
 import { ComponentsCollection } from "./collections/component";
 import { ConfigCollection } from "./collections/config";
@@ -8,10 +12,13 @@ import { gradientSelectorField } from "./plugins/GradientSelector";
 import { fontPickerField } from "./plugins/FontSelector";
 import { customTextField } from "./plugins/MigrationText";
 
+const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true";
+
 export default defineConfig({
-  token: process.env.TINA_CLOUD_TOKEN,
-  clientId: process.env.TINA_CLOUD_CLIENT_ID,
-  branch: "main",
+  authProvider: isLocal
+    ? new LocalAuthProvider()
+    : new UsernamePasswordAuthJSProvider(),
+  contentApiUrlOverride: "/api/tina/gql",
   cmsCallback(cms) {
     cms.fields.add(iconPickerField);
     cms.fields.add(gradientSelectorField);
@@ -21,6 +28,13 @@ export default defineConfig({
   build: {
     publicFolder: "public",
     outputFolder: "admin",
+  },
+  media: {
+    tina: {
+      mediaRoot: "",
+      publicFolder: "public",
+      static: true,
+    },
   },
   schema: {
     collections: [

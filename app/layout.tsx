@@ -4,7 +4,7 @@ import { Providers } from "./providers";
 import { Navbar } from "@/SiteNavbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
-import { client } from "../tina/__generated__/client";
+import { client } from "../tina/__generated__/databaseClient";
 import TinaIcon from "@/TinaIcon";
 import { getAverageLuminance, tinaGradientToJsx } from "../lib/utils";
 import type { Metadata, ResolvingMetadata } from "next";

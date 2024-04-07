@@ -1,4 +1,4 @@
-import { client } from "../../tina/__generated__/client";
+import { client } from "../../tina/__generated__/databaseClient";
 import Page from "@/CMS/CMSPage";
 import type { Metadata, ResolvingMetadata } from "next";
 

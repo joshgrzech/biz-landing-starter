@@ -1,4 +1,4 @@
-import { client } from "cms/__generated__/client";
+import { client } from "cms/__generated__/databaseClient";
 import CMSPage from "@/CMS/CMSPage";
 import type { Metadata, ResolvingMetadata } from "next";
 

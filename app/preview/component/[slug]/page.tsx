@@ -1,4 +1,4 @@
-import { client } from "cms/__generated__/client";
+import { client } from "cms/__generated__/databaseClient";
 import BasePreview from "@/CMS/Preview/PreviewComponent";
 
 export async function generateStaticParams() {

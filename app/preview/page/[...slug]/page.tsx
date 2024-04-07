@@ -1,4 +1,4 @@
-import { client } from "cms/__generated__/client";
+import { client } from "cms/__generated__/databaseClient";
 import Page from "@/CMS/CMSPage";
 import BasePreview from "@/CMS/Preview/PreviewPage";
 

@@ -2,6 +2,8 @@
 
 **Thanks to: Next.js, TinaCMS, TailwindCSS**
 
+**Forked from: https://github.com/tinacms/tina-self-hosted-demo**
+
 **Key Features**
 
 - **SSR for Performance:** Leverages Next.js's server-side rendering capabilities to deliver fast initial page loads and improved search engine visibility.
